@@ -1,0 +1,60 @@
+<html>
+  <head>
+    
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="tic-tac-toe.css" />
+    <style>
+        * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  background: url('https://img.freepik.com/free-vector/futuristic-technological-wallpaper_79603-1093.jpg?w=1060&t=st=1678802930~exp=1678803530~hmac=3503b11e643bcc7a4443d863fc0b918a5e58566a9cb4619b91944b82b88907aa') no-repeat;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 700px;
+  min-height: 500px;
+  border-radius: 5%;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  background-color: #666;
+  border: 5px solid white;
+  font-size: 80px;
+  color:black;
+  border-radius: 10%;
+}
+
+body {
+  display: flex;
+  background: #eee url('https://img.freepik.com/free-vector/colorful-futuristic-background-with-shiny-particles_52683-42650.jpg?size=626&ext=jpg') no-repeat
+    center center/cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#turn {
+    color: aliceblue;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="tictactoe"></div>
+      <div id="player" align="center">
+        <span id="turn" align="">Player X</span>
+      </div>
+    </div>
+    <script type="text/javascript" src="tic-tac-toe.js"></script>
+  </body>
+</html>

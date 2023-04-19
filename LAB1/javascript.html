@@ -1,0 +1,51 @@
+<html>
+    <link rel ='stylesheet' type='text/css' href ='mystyle.css'>
+    <body onload="window.alert('Page successfully loaded, i am window event')">
+        <h1 id="h">THIS IS MY JAVASCRIPT PAGE</h1>
+        <BUTTON ID="B" ONCLICK="CHANGE()">CHANGE HEADING</BUTTON> 
+        <br>
+        <IMG ID="i" src="anits.jpeg">
+         <br>  
+        <BUTTON ONCLICK="document.getElementById('i').src ='anits4.jpeg'">CLASSROOMS</BUTTON>
+        <BUTTON onclick="document.getElementById('i').src = 'buses.jpeg'">BUSES</BUTTON>
+        <BUTTON onclick="document.getElementById('i').src = 'anits1.jpeg'">GREENERY</BUTTON>
+        <BR>
+            
+            <BUTTON ONCLICK="document.getElementById('i').style.borderRadius = '50px'">Circle image</BUTTON> 
+            <BUTTON ONCLICK="document.getElementById('i').style.borderRadius = '0px'">Normal image</BUTTON> 
+        <input type =color>
+        <div> 
+        
+        </div>
+        <h2>for mouse event hover on the below paragraph</h2>
+        <p id="para" > JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat</p>
+        <BUTTON ID="B2" ONCLICK="changecolor()">CHANGE COLOR</BUTTON> 
+        <h2> Enter something here for key event</h2>
+        <input type="text" id="input1" onkeydown="keydownevent()"/>
+        <SCRIPT>
+            function CHANGE(){
+                document.getElementById('h').innerHTML='NEW JAVASCRIPT HEADING (onclick event)';
+            }
+            function changecolor(){
+            let t= document.getElementById('para')
+            t.style.color='yellow'}
+            let t1= document.getElementById('para')
+            t1.addEventListener('mouseover',function()
+            {
+               t1.style.color='green' ;
+            });
+            t1.addEventListener('mouseout',function()
+            {
+               t1.style.color='RED' ;
+            }
+            );
+            function keydownevent()
+	    {
+		    document.getElementById("input1");
+		    alert("Pressed a key");
+	    }
+            </SCRIPT>
+    
+    
+    </body>
+</html>
